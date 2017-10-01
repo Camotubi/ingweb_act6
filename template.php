@@ -7,9 +7,10 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/custom.css">
 		<script src="js/bootstrap.min.js"></script>
-		<title> Conversión Dec a Bin</title>
 	</head>
 	<body>
+		<header>
+  		</header>
 		<nav>
 			<ul class ="navbar list-unstyled">
 				<li>
@@ -36,16 +37,9 @@
 			<div class = "row">
 					<div class ="col-sm-10">
 						<section>
-
-<?php
-			if(!empty($_POST))
-			{
-		?>
-				<p>El software con el numero de serie: <?php echo $_POST["nomSerie"] ?> a sido activado para el propietario <?php echo $_POST["nombre"]." ".$_POST["apellido"]?> y la compañia con identificacion <?php echo $_POST["rup"]?>.</p>
-
-					<?php
-			}
-			?>
+							<?php
+								echo $view;
+							?>	
 						</section>
 					</div>
 					<div class ="col-sm-2">
